@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>FCC - Survey Form</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<script src="./script.js"></script>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+			voluptates!
+		</p>
+		<form id="survey-form" action="url">
+			<label id="name-label" for="name">Name</label>
+			<input
+				placeholder="Enter your name"
+				required
+				id="name"
+				type="text"
+			/>
+
+			<label id="email-label" for="email">Email</label>
+			<input
+				placeholder="Enter your email"
+				required
+				type="email"
+				name="email"
+				id="email"
+			/>
+
+			<label id="number-label" for="number">Number</label>
+			<input
+				placeholder="Enter a number form 0 to 10"
+				min="0"
+				max="10"
+				type="number"
+				name="number"
+				id="number"
+			/>
+
+			<label for="dropdown">Select one option</label>
+			<select name="dropdown" id="dropdown">
+				<option value="one">Lorem, ipsum dolor.</option>
+				<option value="two">Lorem, ipsum dolor.</option>
+				<option value="three">Lorem, ipsum dolor.</option>
+				<option value="four">Lorem, ipsum dolor.</option>
+				<option value="five">Lorem, ipsum dolor.</option>
+			</select>
+
+			<fieldset>
+				<legend>Radio buttons</legend>
+
+				<label>
+					<input
+						type="radio"
+						value="option-1"
+						name="group"
+						id="option-1"
+					/>
+					Lorem ipsum dolor sit amet consectetur.
+				</label>
+
+				<label>
+					<input
+						type="radio"
+						value="option-2"
+						name="group"
+						id="option-2"
+					/>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Expedita.
+				</label>
+
+				<label>
+					<input
+						type="radio"
+						value="option-3"
+						name="group"
+						id="option-3"
+					/>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Checkboxes</legend>
+
+				<label>
+					<input
+						value="option-1"
+						type="checkbox"
+						name=""
+						id="option-1"
+					/>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatum, officiis!
+				</label>
+
+				<label
+					><input
+						value="option-2"
+						type="checkbox"
+						name=""
+						id="option-2"
+					/>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Fuga quos dicta eligendi?
+				</label>
+
+				<label
+					><input
+						value="option-3"
+						type="checkbox"
+						name=""
+						id="option-3"
+					/>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatum, officiis!
+				</label>
+
+				<label
+					><input
+						value="option-4"
+						type="checkbox"
+						name=""
+						id="option-4"
+					/>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Voluptatum, officiis!</label
+				>
+			</fieldset>
+
+			<textarea
+				name="additional-comments"
+				id="additional-comments"
+				cols="30"
+				rows="10"
+				placeholder="Additional comments"
+			></textarea>
+
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: auto 25vmax auto 25vmax;
+	font-size: 1.5vmax;
+	background-color: #d4f1f4;
+}
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+	gap: 2vmin;
+
+	padding: 2vmax;
+	border-radius: 0.5%;
+	background-color: #75e6da;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 2vmax;
+}
+
+legend {
+	display: block;
+}
+
+input {
+	height: 4vmax;
+	font-size: 1vmax;
+	background-color: transparent;
+	border-style: none none inset none;
+}
+
+#dropdown {
+	height: 3vmax;
+	font-size: 1vmax;
+
+	background-color: transparent;
+	border-style: none none inset none;
+}
+
+fieldset input {
+	width: 1.5vmax;
+	display: inline;
+	vertical-align: middle;
+}
+
+textarea {
+	height: 30vmax;
+	font-size: inherit;
+}
+
+button {
+	height: 5vmax;
+	font-size: 2vmax;
+	background-color: #05445e;
+	color: #d4f1f4;
+}
+
+button:hover {
+	background-color: #096b96;
+}
+
+@media (max-width: 1000px) {
+	body {
+		display: block;
+		margin: 0px;
+		padding: 1vmax;
+		font-size: 3vmax;
+	}
+
+	input {
+		font-size: 2vmax;
+	}
+
+	fieldset input {
+		width: 3vmax;
+	}
+
+	textarea {
+		height: 30vmax;
+	}
+
+	button {
+		height: 10vmax;
+		font-size: 5vmax;
+	}
+}
